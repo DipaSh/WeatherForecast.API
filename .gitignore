@@ -3,3 +3,5 @@
 ################################################################################
 
 /WeatherForecast.API/bin/Debug/netcoreapp2.1
+/WeatherForecast.API/obj/Debug/netcoreapp2.1
+/WeatherForecast.API/obj
