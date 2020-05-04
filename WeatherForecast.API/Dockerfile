@@ -5,8 +5,8 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS build
 WORKDIR /src
-COPY ["WeatherForecast.API/WeatherForecast.API.csproj", "WeatherForecast.API/"]
-RUN dotnet restore "WeatherForecast.API/WeatherForecast.API.csproj"
+COPY ["WeatherForecast.API.csproj", "WeatherForecast.API/"]
+RUN dotnet restore "WeatherForecast.API.csproj"
 COPY . .
 WORKDIR "/src/WeatherForecast.API"
 RUN dotnet build "WeatherForecast.API.csproj" -c Release -o /app
